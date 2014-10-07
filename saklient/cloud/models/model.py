@@ -9,7 +9,7 @@ import saklient
 
 # module saklient.cloud.models.model
 
-class Model:
+class Model(object):
     ## @ignore
     
     # (instance field) _client

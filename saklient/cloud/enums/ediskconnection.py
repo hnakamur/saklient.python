@@ -5,7 +5,7 @@ import saklient
 
 # module saklient.cloud.enums.ediskconnection
 
-class EDiskConnection:
+class EDiskConnection(object):
     ## ディスクの接続方式を表す列挙子。
     
     IDE = "ide"

@@ -5,7 +5,7 @@ import saklient
 
 # module saklient.cloud.enums.eserverinstancestatus
 
-class EServerInstanceStatus:
+class EServerInstanceStatus(object):
     ## サーバの起動状態を表す列挙子。
     
     DOWN = "down"

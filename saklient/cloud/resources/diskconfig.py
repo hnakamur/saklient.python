@@ -7,7 +7,7 @@ import saklient
 
 # module saklient.cloud.resources.diskconfig
 
-class DiskConfig:
+class DiskConfig(object):
     ## ディスク修正のパラメータ。
     
     # (instance field) _client

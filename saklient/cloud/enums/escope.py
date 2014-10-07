@@ -5,7 +5,7 @@ import saklient
 
 # module saklient.cloud.enums.escope
 
-class EScope:
+class EScope(object):
     ## リソースの公開範囲を表す列挙子。
     
     USER = "user"

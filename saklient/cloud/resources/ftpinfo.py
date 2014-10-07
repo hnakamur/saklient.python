@@ -5,7 +5,7 @@ import saklient
 
 # module saklient.cloud.resources.ftpinfo
 
-class FtpInfo:
+class FtpInfo(object):
     ## FTPサーバのアカウント情報。
     
     # (instance field) _host_name

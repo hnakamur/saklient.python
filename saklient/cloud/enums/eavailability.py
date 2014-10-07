@@ -5,7 +5,7 @@ import saklient
 
 # module saklient.cloud.enums.eavailability
 
-class EAvailability:
+class EAvailability(object):
     ## リソースの有効性を表す列挙子。
     
     SELECTABLE = "selectable"

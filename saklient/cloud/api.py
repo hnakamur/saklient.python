@@ -21,7 +21,7 @@ import saklient
 
 # module saklient.cloud.api
 
-class API:
+class API(object):
     ## さくらのクラウドAPIクライアントを利用する際、最初にアクセスすべきルートとなるクラス。
     # 
     # @see API.authorize

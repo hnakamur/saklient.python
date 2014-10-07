@@ -5,7 +5,7 @@ import saklient
 
 # module saklient.cloud.enums.eapplianceclass
 
-class EApplianceClass:
+class EApplianceClass(object):
     ## アプライアンスのクラスを表す列挙子。
     
     LOADBALANCER = "loadbalancer"
