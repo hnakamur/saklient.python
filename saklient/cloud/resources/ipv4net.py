@@ -1,5 +1,7 @@
 # -*- coding:utf-8 -*-
 
+import six
+str = six.text_type
 from ..client import Client
 from .resource import Resource
 from .ipv4range import Ipv4Range
@@ -196,4 +198,3 @@ class Ipv4Net(Resource):
         if withClean or self.n_next_hop:
             Util.set_by_path(ret, "NextHop", self.m_next_hop)
         return ret
-    

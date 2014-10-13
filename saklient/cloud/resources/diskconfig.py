@@ -1,5 +1,7 @@
 # -*- coding:utf-8 -*-
 
+import six
+str = six.text_type
 from ...util import Util
 from ..client import Client
 from .script import Script
@@ -187,4 +189,3 @@ class DiskConfig(object):
         path = "/disk/" + self._disk_id + "/config"
         self._client.request("PUT", path, q)
         return self
-    

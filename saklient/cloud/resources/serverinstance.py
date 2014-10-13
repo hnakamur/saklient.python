@@ -1,5 +1,7 @@
 # -*- coding:utf-8 -*-
 
+import six
+str = six.text_type
 from ...util import Util
 from ..client import Client
 from .resource import Resource
@@ -140,4 +142,3 @@ class ServerInstance(Resource):
                 'ID': "0"
             } if self.m_iso_image is None else self.m_iso_image.api_serialize_id()))
         return ret
-    

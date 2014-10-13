@@ -1,5 +1,7 @@
 # -*- coding:utf-8 -*-
 
+import six
+str = six.text_type
 from ..client import Client
 from .resource import Resource
 from ...util import Util
@@ -155,4 +157,3 @@ class Ipv6Net(Resource):
         if withClean or self.n_prefix_tail:
             Util.set_by_path(ret, "IPv6PrefixTail", self.m_prefix_tail)
         return ret
-    

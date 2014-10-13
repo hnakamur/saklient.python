@@ -1,5 +1,7 @@
 # -*- coding:utf-8 -*-
 
+import six
+str = six.text_type
 from ...errors.saklientexception import SaklientException
 from ..client import Client
 from .appliance import Appliance
@@ -19,4 +21,3 @@ class VpcRouter(Appliance):
         super(VpcRouter, self).__init__(client, obj, wrapped)
         Util.validate_type(client, "saklient.cloud.client.Client")
         Util.validate_type(wrapped, "bool")
-    

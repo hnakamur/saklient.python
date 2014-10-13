@@ -1,12 +1,14 @@
 # -*- coding:utf-8 -*-
 
+import six
+str = six.text_type
 from ...util import Util
 from .lbserver import LbServer
 import saklient
 
 # module saklient.cloud.resources.lbvirtualip
 
-class LbVirtualIp:
+class LbVirtualIp(object):
     ## ロードバランサの仮想IPアドレス設定。
     
     # (instance field) _virtual_ip_address

@@ -1,11 +1,13 @@
 # -*- coding:utf-8 -*-
 
+import six
+str = six.text_type
 from ...util import Util
 import saklient
 
 # module saklient.cloud.resources.lbserver
 
-class LbServer:
+class LbServer(object):
     ## ロードバランサの監視対象サーバ設定。
     
     # (instance field) _ip_address
@@ -153,4 +155,3 @@ class LbServer:
         status = (obj["Status"] if "Status" in obj else None)
         self._status = None if status is None else status.lower()
         return self
-    
